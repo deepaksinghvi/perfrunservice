@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "60966888-2f53-4fe6-bcea-1bc0a74d9464",
+		"name": "perfrunservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "perfrun",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"suitename\": \"wRap\",\n\"testname\": \"Weeklyrun\",\n\"cloud\": \"Central\",\n\"durationinmins\": 60\n}"
+				},
+				"url": {
+					"raw": "{{url}}/perfrun",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"perfrun"
+					]
+				},
+				"description": "Create Perfrun"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"suitename\": \"wRap\",\n\"testname\": \"Weeklyrun\",\n\"cloud\": \"Central\",\n\"durationinmins\": 60\n}"
+						},
+						"url": {
+							"raw": "{{url}}/perfrun",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"perfrun"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n\"suitename\": \"wRap\",\n\"testname\": \"Weeklyrun\",\n\"cloud\": \"Central\",\n\"durationinmins\": 60,\n\"id\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "perfrun/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/perfrun/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"perfrun",
+						"1"
+					]
+				},
+				"description": "Get Perfrun"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/perfrun/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"perfrun",
+								"1"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n\"suitename\": \"wRap\",\n\"testname\": \"Weeklyrun\",\n\"cloud\": \"Central\",\n\"durationinmins\": 60,\n\"id\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "perfruns",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/perfruns",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"perfruns"
+					]
+				},
+				"description": "Get Perfruns"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/perfruns",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"perfruns"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "[\n  {\n  \"suitename\": \"wRap\",\n  \"testname\": \"Weeklyrun\",\n  \"cloud\": \"Central\",\n  \"durationinmins\": 60,\n  \"id\": 1\n  },\n  {\n  \"suitename\": \"wRap\",\n  \"testname\": \"Dailyrun\",\n  \"cloud\": \"Central\",\n  \"durationinmins\": 45,\n  \"id\": 2\n  }\n]"
+				}
+			]
+		}
+	]
+}
